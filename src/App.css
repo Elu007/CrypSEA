@@ -1,5 +1,10 @@
-body {
-    background-color: #8EC5FC;
-    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 
+body {
+    background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgb(215, 235, 208) 67.4% );
 }
