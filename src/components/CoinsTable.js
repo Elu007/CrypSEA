@@ -5,7 +5,7 @@ import { CoinList } from '../config/api';
 import { CryptoState } from '../CryptoContext';
 
 export function numberWithCommas(x) {
-  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  return x.toString().replace(/\B(?=(\d{5})+(?!\d))/g, ",");
 }
 const CoinsTable = () => {
     const [coins, setCoins] = useState([]);
@@ -41,7 +41,7 @@ const CoinsTable = () => {
                   {["Coin", "Price", "24h Change", "Market Cap"].map((head) => (
                     <TableCell
                       style={{
-                        backgroundColor:"yellow",
+                        backgroundColor:"#f5f500",
                         fontWeight: "800",
                       }}
                       key={head}

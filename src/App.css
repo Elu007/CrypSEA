@@ -4,7 +4,3 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
-body {
-    background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgb(215, 235, 208) 67.4% );
-}
