@@ -1,4 +1,4 @@
-import { Table, TableContainer, TableHead, TableRow, TextField, TableCell, TableBody } from '@mui/material';
+import { Table, TableContainer, TableHead, TableRow, TextField, TableCell, TableBody, Pagination } from '@mui/material';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { CoinList } from '../config/api';
@@ -11,7 +11,8 @@ const CoinsTable = () => {
     const [coins, setCoins] = useState([]);
     const [loading, setLoading] = useState(false);
     const [search, setSearch] = useState("");
-    const { currency, symbol } = CryptoState()
+    const { currency, symbol } = CryptoState();
+    const [page, setPage] = useState(1);
     const fetchCoins = async () =>{
         setLoading(true);
         const {data} = await axios.get(CoinList(currency));
@@ -53,7 +54,9 @@ const CoinsTable = () => {
                 </TableRow>
             </TableHead>
             <TableBody>
-                      {handleSearch().map((row) =>{
+                      {handleSearch()
+                      .slice((page-1) * 10,(page-1)*10 + 10)
+                      .map((row) =>{
                         const profit = row.price_change_percentage_24h > 0;
                         return(
                           <TableRow key={row.name}>
@@ -107,6 +110,21 @@ const CoinsTable = () => {
             </TableBody>
         </Table>
       </TableContainer>
+
+      <Pagination
+      style={{
+        color:"gold",
+        padding:20,
+        width:"100%",
+        display:"flex",
+        justifyContent:"center",
+      }}
+      count={(handleSearch()?.length/10).toFixed(0)}
+      onChange={(_, value) =>{
+        setPage(value);
+        window.scroll(0,50);
+      }}
+      />
     </div>
   )
 }
