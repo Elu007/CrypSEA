@@ -1,70 +1,102 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# CrypSEA- Invest In Future
 
-## Available Scripts
+Its a new age Crypto Currency tracking webapp. Here we offer current market price,news,blogs,crypto products etc.
 
-In the project directory, you can run:
+## LOGO
+![CrypSEA logo](https://user-images.githubusercontent.com/85642896/213734282-1240b66d-8810-45b2-8dd8-876f8eec9144.png)
+## Features
 
-### `npm start`
+- Light/dark mode toggle (Coming Soon)
+- Live Crypto Prices with Search Option
+- News Blogs & more.
+- Responsive App
+- Making Investments Easy
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Deployment
 
-### `npm test`
+Deployed link:-
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+  npm run deploy
+```
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Screenshots
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Screenshot (88)](https://user-images.githubusercontent.com/85642896/213735105-c722d1c3-6508-4f9f-a28a-51d7f16a457f.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## API Reference
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Get all items
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```http
+  https://www.coingecko.com/en/api/documentation
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Tech Stack
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Client:** React, Bootstrap5, MUI5
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Server:** NodeJS
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Run Locally
 
-### Analyzing the Bundle Size
+Clone the project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+  git clone https://github.com/Elu007/CrypSEA
 
-### Making a Progressive Web App
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Go to the project directory
 
-### Advanced Configuration
+```bash
+  cd CrypSEA
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Install dependencies
 
-### Deployment
+```bash
+  npm install -y
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Start the server
 
-### `npm run build` fails to minify
+```bash
+  npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## 🚀 About Me
+I'm a full stack developer...
+I’m currently learning React Js, Node.Js, MongoDB, DSA
+
+📝 I regularly write articles on [https://investingwithelu.blogspot.com/] [https://eluprogramming.blogspot.com/]
+
+
+## 🔗 Links
+
+- LinkedIn
+https://www.linkedin.com/in/sk-elaf-ahmed-bb85b0210/
+
+
+
+## Contributing
+
+Contributions are always welcome!
+If you want to contribute reach me on linkedin, and let's discuss.
+
+
+## Badges
+
+
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+
+
