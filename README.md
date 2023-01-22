@@ -16,7 +16,7 @@ Its a new age Crypto Currency tracking webapp. Here we offer current market pric
 
 ## Deployment
 
-Deployed link:-
+Deployed link:- https://cryp-sea-elu.vercel.app/
 
 ```bash
   npm run deploy
