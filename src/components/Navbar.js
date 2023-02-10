@@ -1,7 +1,8 @@
-import { MenuItem, Select } from '@mui/material'
 import React from 'react'
+import { MenuItem, Select } from '@mui/material'
 import { CryptoState } from '../CryptoContext'
-import logo from "./Assets/logo.png"
+import { Link } from 'react-router-dom'
+import logo from "./Assets/logo.svg"
 import './Navbar.css'
 
 const Navbar = () => {
@@ -11,35 +12,35 @@ const Navbar = () => {
         <div>
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="/home"><img src={logo} alt="logo" width="100px" height="48px" /></a>
+                    <Link className="navbar-brand" to="/home"><img src={logo} alt="logo" width="100px" height="58px" /></Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ms-auto fs-5">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/home">Home</a>
+                                <Link className="nav-link active" aria-current="page" to="/home">Home</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" href="/news">News</a>
+                                <Link className="nav-link active" to="/news">News</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" href="/blogs">Blogs</a>
+                                <Link className="nav-link active" to="/blogs">Blogs</Link>
                             </li>
                             <li className="nav-item dropdown">
-                                <a className="nav-link active dropdown-toggle" href="/products" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <Link className="nav-link active dropdown-toggle" to="/product" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Products
-                                </a>
+                                </Link>
                                 <ul className="dropdown-menu">
-                                    <li><a className="dropdown-item" href="/products">Crypto Extensions</a></li>
-                                    <li><a className="dropdown-item" href="/product">Financial Blogs</a></li>
+                                    <li><Link className="dropdown-item" to="/product">Crypto Extensions</Link></li>
+                                    <li><Link className="dropdown-item" to="/product">Financial Blogs</Link></li>
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" href="/about">About Us</a>
+                                <Link className="nav-link active" to="/about">About Us</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" href="/contact">Contact</a>
+                                <Link className="nav-link active" to="/contact">Contact</Link>
                             </li>
                         </ul>
                     </div>
