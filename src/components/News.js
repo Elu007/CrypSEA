@@ -1,25 +1,22 @@
 import React, { useEffect, useState } from 'react'
-import axios from 'axios';
+import { getNews } from './api/news';
 
 const News = () => {
   const [page, setPage] = useState(1);
   const [response, setResponse] = useState(null);
 
-  const getNews = async () => {
+  const fetchNews = async () => {
     try {
-      const res = await axios.get('components/api/news/', {
-        params: { page }
-      });
-      const { data } = res;
-      setResponse(data.data[0].screen_data.news);
+      const news = await getNews()
+      setResponse(news);
     } catch (error) {
       console.error(error);
     }
   };
 
   useEffect(()=>{
-    getNews();
-  })
+    fetchNews();
+  }, [])
 
   return (
     <div className='container text-center'>
