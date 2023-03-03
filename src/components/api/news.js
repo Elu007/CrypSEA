@@ -17,7 +17,7 @@ export const getNews = async (page = 1) => {
 				lang_ID: '1'
 			},
 			headers: {
-				'x-rapidapi-key': 'd8b6ef1eedmshd29a867b6652fcfp13c047jsnd6cf9d0aa95e'
+				'x-rapidapi-key': process.env.REACT_APP_RAPIDAPI_KEY
 			}
 		})
 		const news = res.data.data[0].screen_data.news
