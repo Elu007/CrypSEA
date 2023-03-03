@@ -3,6 +3,8 @@ import crypto1 from './Assets/crypto1.jpg'
 import crypto2 from './Assets/crypto2.webp'
 import compounding from './Assets/compounding.jpg'
 import website from './Assets/website.jpg'
+import blog from './Assets/blog.jpg'
+import { Link } from 'react-router-dom'
 
 
 const Blog = () => {
@@ -16,25 +18,25 @@ const Blog = () => {
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item active" data-bs-interval="10000">
-                        <img src={crypto1} className="d-block w-100" alt="crypto1" style={{height:"85vh"}}/>
-                            <div className="carousel-caption d-none d-md-block">
-                                <h1 className='text-white'>Crypto Currency- Start Investing</h1>
-                                <a className='btn btn-light btn-lg' href="https://investingwithelu.blogspot.com/2021/06/crypto-currency-and-how-to-invest-in.html" target="_blank" rel="noreferrer" role="button">Read More</a>
-                            </div>
+                        <img src={crypto1} className="d-block w-100" alt="crypto1" style={{ height: "85vh" }} />
+                        <div className="carousel-caption d-none d-md-block">
+                            <h1 className='text-white'>Crypto Currency- Start Investing</h1>
+                            <a className='btn btn-light btn-lg' href="https://investingwithelu.blogspot.com/2021/06/crypto-currency-and-how-to-invest-in.html" target="_blank" rel="noreferrer" role="button">Read More</a>
+                        </div>
                     </div>
                     <div className="carousel-item" data-bs-interval="2000">
-                        <img src={crypto2} className="d-block w-100" alt="crypto2" style={{height:"85vh"}}/>
-                            <div className="carousel-caption d-none d-md-block">
-                                <h1 className='text-white bg-dark'>Buy Your First Crypto</h1>
-                                <a className='btn btn-light btn-lg' href="https://investingwithelu.blogspot.com/2022/05/crypto-currency-is-it-right-time-to-buy.html" target="_blank" rel="noreferrer" role="button">Read More</a>
-                            </div>
+                        <img src={crypto2} className="d-block w-100" alt="crypto2" style={{ height: "85vh" }} />
+                        <div className="carousel-caption d-none d-md-block">
+                            <h1 className='text-white bg-dark'>Buy Your First Crypto</h1>
+                            <a className='btn btn-light btn-lg' href="https://investingwithelu.blogspot.com/2022/05/crypto-currency-is-it-right-time-to-buy.html" target="_blank" rel="noreferrer" role="button">Read More</a>
+                        </div>
                     </div>
                     <div className="carousel-item">
-                        <img src={compounding} className="d-block w-100" alt="Compounding" style={{height:"85vh"}}/>
-                            <div className="carousel-caption d-none d-md-block">
-                                <h1>Power Of Compounding</h1>
-                                <a className='btn btn-light btn-lg' href="https://investingwithelu.blogspot.com/2021/09/the-unfair-advantage-power-of.html" target="_blank" rel="noreferrer" role="button">Read More</a>
-                            </div>
+                        <img src={compounding} className="d-block w-100" alt="Compounding" style={{ height: "85vh" }} />
+                        <div className="carousel-caption d-none d-md-block">
+                            <h1>Power Of Compounding</h1>
+                            <a className='btn btn-light btn-lg' href="https://investingwithelu.blogspot.com/2021/09/the-unfair-advantage-power-of.html" target="_blank" rel="noreferrer" role="button">Read More</a>
+                        </div>
                     </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
@@ -49,9 +51,12 @@ const Blog = () => {
             <div className='text-center m-5'>
                 <h1>Learn With Blogs</h1>
                 <p>New to Finance? Start Investing With Proper Financial Knowledge - with our easy to understand blogs</p>
-                <img src={website} className="d-block w-100" alt="website"/>
-                <h3 className='mt-5'>Click below and check out our latest financial blogs...</h3>
-                <a class="btn btn-primary btn-lg mt-3" href="https://investingwithelu.blogspot.com/" target="_blank" rel="noreferrer" role="button">View More</a>
+                <img src={website} className="d-block w-100" alt="website" />
+                <h3 className='mt-5'>Check out our most recent financial blogs by clicking the button below...</h3>
+                <div className='mt-3'>
+                    <img src={blog} className="rounded mx-5" style={{ width: "30vw", height: "50vh" }} alt="btc" />
+                    <Link class="btn btn-primary btn-lg mt-3" to="https://investingwithelu.blogspot.com/" target="_blank" rel="noreferrer" role="button">View More</Link>
+                </div>
             </div>
         </div>
     )

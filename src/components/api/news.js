@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+// Get data from here and import this to the main News.js
 const BASE_URL = 'https://investing-cryptocurrency-markets.p.rapidapi.com/coins'
 
 const api = axios.create({
