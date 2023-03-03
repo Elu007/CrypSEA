@@ -24,6 +24,6 @@ export const getNews = async (page = 1) => {
 		console.log(news)
 		return news;
 	} catch (error) {
-		throw new Error("Failed to get news.");
+		throw new Error("Failed to get news, please fetch again");
 	}
 }

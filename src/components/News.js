@@ -27,7 +27,7 @@ const News = () => {
   return (
     <div className='container text-center'>
       <h1>Crypto News - from CrypSEA</h1>
-      <h4>With our new web-app service, you can read all the most recent cryptocurrency-related news from all across the world.</h4>
+      <h4>With our new web-app service, you can read all the most recent cryptocurrency-related news from all across the world...</h4>
 
       <div className="container">
         <div className="row">
