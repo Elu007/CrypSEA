@@ -29,7 +29,7 @@ const News = () => {
       <h1>Crypto News - from CrypSEA</h1>
       <h4>With our new web-app service, you can read all the most recent cryptocurrency-related news from all across the world...</h4>
 
-      <div className="container">
+      <div className="container shadow-lg p-3 mb-5 bg-body rounded">
         <div className="row">
           {loading ? (<LinearProgress />)
             : (

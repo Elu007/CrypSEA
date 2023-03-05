@@ -3,13 +3,13 @@ import crypto1 from './Assets/crypto1.jpg'
 import crypto2 from './Assets/crypto2.webp'
 import compounding from './Assets/compounding.jpg'
 import website from './Assets/website.jpg'
-import blog from './Assets/blog.jpg'
+import blog from './Assets/blog.png'
 import { Link } from 'react-router-dom'
 
 
 const Blog = () => {
     return (
-        <div className='container'>
+        <div className='container shadow-lg p-3 mb-5 bg-body rounded'>
             <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -54,7 +54,7 @@ const Blog = () => {
                 <img src={website} className="d-block w-100" alt="website" />
                 <h3 className='mt-5'>Check out our most recent financial blogs by clicking the button below...</h3>
                 <div className='mt-3'>
-                    <img src={blog} className="rounded mx-5" style={{ width: "30vw", height: "50vh" }} alt="btc" />
+                    <img src={blog} className="rounded" style={{ width: "30vw", height: "50vh" }} alt="btc" />
                     <Link class="btn btn-primary btn-lg mt-3" to="https://investingwithelu.blogspot.com/" target="_blank" rel="noreferrer" role="button">View More</Link>
                 </div>
             </div>

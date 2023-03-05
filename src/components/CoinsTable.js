@@ -58,7 +58,7 @@ const CoinsTable = () => {
                 ))}
               </TableRow>
             </TableHead>
-            <TableBody>
+            <TableBody style={{backgroundColor:"#fafaf0"}}>
               {handleSearch()
                 .slice((page - 1) * 10, (page - 1) * 10 + 10)
                 .map((row) => {
