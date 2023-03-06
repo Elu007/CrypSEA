@@ -19,8 +19,8 @@ const About = () => {
       <hr style={{ border: "2px solid" }} />
       <div className='mt-5 shadow-lg p-3 mb-5 bg-body rounded'>
         <h1>Our Executive Team</h1>
-        <div className='row'>
-          <img className='mx-auto p-3 rounded-5' style={{height:"65vh", width:"35vw"}} src={profile} alt="profile" />
+        <div>
+          <img className='mx-auto img-fluid p-3 rounded-5' src={profile} alt="profile" />
           <h1>Sk Elaf Ahmed</h1>
           <h5>Founder & CEO of CrypSEA</h5>
           <p className='mt-3'>
