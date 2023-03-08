@@ -1,5 +1,7 @@
 import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import contact from './Assets/contact.png'
 
 const Contact = () => {
@@ -12,12 +14,24 @@ const Contact = () => {
       .then((result) => {
         console.log(result.text);
         console.log("message sent successfully");
-        alert("Message Sent Successfully")
       }, (error) => {
         console.log(error.text);
-        alert("Opps, some error happened!")
       });
   };
+  const notify = () =>{
+    toast('✉️ Message Sent!', {
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      });
+  }
+
+
   return (
     <div className='container shadow-lg p-3 mb-5 bg-body rounded'>
       <h2>Write Us a Message👇</h2>
@@ -36,7 +50,10 @@ const Contact = () => {
               <label className='fs-3'>Message</label>
               <textarea className='form-control' style={{height:"100px"}} name="message" placeholder='Write your message' />
             </div>
-            <input className='mt-1 btn btn-success btn-lg' type="submit" value="Send" />
+            <div className='mt-1'>
+            <input onClick={notify} className='btn btn-success btn-lg' type="submit" value="Send" />
+            <ToastContainer />
+            </div>
           </form>
         </div>
         <div className="col">
