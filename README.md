@@ -22,13 +22,16 @@ Deployed link:- https://cryp-sea-elu.vercel.app/
 
 ## Screenshots
 
-![Screenshot (110)](https://user-images.githubusercontent.com/85642896/229835043-f80f05ed-135b-4784-a90e-5cdd77e3ad25.png)
+![Screenshot (110)](https://user-images.githubusercontent.com/85642896/229839466-d5061001-113f-4f4b-92a5-8c3bfe9e180f.png)
 
-![Screenshot (111)](https://user-images.githubusercontent.com/85642896/229835179-6aa3402b-8639-4662-87b7-cd7b5449bb7c.png)
 
-![Screenshot (112)](https://user-images.githubusercontent.com/85642896/229835406-5fb45dff-9537-4425-a7a6-e9e0e0370c8f.png)
+![Screenshot (111)](https://user-images.githubusercontent.com/85642896/229839585-302c7f8c-a78b-4625-a51a-c8ea3d785494.png)
 
-![Screenshot (113)](https://user-images.githubusercontent.com/85642896/229835521-98028e22-cc4a-4570-8d6c-acd91f8974c8.png)
+![Screenshot (112)](https://user-images.githubusercontent.com/85642896/229840010-be50dd60-ae7c-4ce1-a9dc-e5e00e1c0244.png)
+
+
+![Screenshot (113)](https://user-images.githubusercontent.com/85642896/229840205-860c9c6d-d80b-404b-8c32-d91164378db2.png)
+
 
 
 
