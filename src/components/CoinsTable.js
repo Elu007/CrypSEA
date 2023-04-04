@@ -2,6 +2,7 @@ import { Table, TableContainer, TableHead, TableRow, TextField, TableCell, Table
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { CoinList } from '../config/api';
+import { useNavigate } from "react-router-dom";
 import { CryptoState } from '../CryptoContext';
 
 export function numberWithCommas(x) {
@@ -13,7 +14,7 @@ const CoinsTable = () => {
   const [search, setSearch] = useState("");
   const { currency, symbol } = CryptoState();
   const [page, setPage] = useState(1);
-
+  const navigate = useNavigate();
 
   const fetchCoins = async () => {
     setLoading(true);
@@ -64,7 +65,7 @@ const CoinsTable = () => {
                 .map((row) => {
                   const profit = row.price_change_percentage_24h > 0;
                   return (
-                    <TableRow key={row.name}>
+                    <TableRow onClick={() => navigate(`/coins/${row.id}`)} key={row.name} style={{cursor:"pointer"}}>
                       <TableCell component='th' scope='row' style={{ display: "flex", gap: 15 }}>
                         <img
                           src={row?.image}

@@ -8,6 +8,7 @@ import Navbar from './components/Navbar';
 import News from './components/News';
 import Contact from './components/Contact';
 import Product from './components/Product';
+import CoinPage from './components/CoinPage';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
      <Routes>
       <Route path='/' exact element={<Home/>}/>
       <Route path='/home' exact element={<Home/>}/>
+      <Route path="/coins/:id" exact element={<CoinPage/>} />
       <Route path='/blogs' exact element={<Blog/>}/>
       <Route path='/about' exact element={<About/>}/>
       <Route path='/news' exact element={<News/>}/>
