@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+
 // Get data from here and import this to the main News.js
 const BASE_URL = 'https://investing-cryptocurrency-markets.p.rapidapi.com/coins'
 
@@ -17,7 +18,7 @@ export const getNews = async (page = 1) => {
 				lang_ID: '1'
 			},
 			headers: {
-				'x-rapidapi-key': 'd8b6ef1eedmshd29a867b6652fcfp13c047jsnd6cf9d0aa95e'
+				'x-rapidapi-key': process.env.REACT_APP_API
 			}
 		})
 		const news = res.data.data[0].screen_data.news
