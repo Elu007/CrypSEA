@@ -13,18 +13,18 @@ import CoinPage from './components/CoinPage';
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-     <Routes>
-      <Route path='/' exact element={<Home/>}/>
-      <Route path='/home' exact element={<Home/>}/>
-      <Route path="/coins/:id" exact element={<CoinPage/>} />
-      <Route path='/blogs' exact element={<Blog/>}/>
-      <Route path='/about' exact element={<About/>}/>
-      <Route path='/news' exact element={<News/>}/>
-      <Route path='/product' exact element={<Product/>}/>
-      <Route path='/contact' exact element={<Contact/>}/>
-     </Routes>
-      <Footer/>
+      <Navbar />
+      <Routes>
+        <Route path='/' exact element={<Home />} />
+        <Route path='/home' exact element={<Home />} />
+        <Route path="/coins/:id" exact element={<CoinPage />} />
+        <Route path='/blogs' exact element={<Blog />} />
+        <Route path='/about' exact element={<About />} />
+        <Route path='/news' exact element={<News />} />
+        <Route path='/product' exact element={<Product />} />
+        <Route path='/contact' exact element={<Contact />} />
+      </Routes>
+      <Footer />
     </div>
   );
 }
